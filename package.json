@@ -1,0 +1,78 @@
+{
+  "name": "webflow-icons",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/tomelliot/webflow-icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomelliot/webflow-icons.git"
+  },
+  "files": [
+    "default",
+    "index.esm.js",
+    "index.js"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./index.esm.js",
+      "require": "./index.js"
+    },
+    "./package.json": {
+      "default": "./package.json"
+    },
+    "./general": {
+      "types": "./general/index.d.ts",
+      "import": "./general/esm/index.js",
+      "require": "./general/index.js"
+    },
+    "./general/*": {
+      "types": "./general/*.d.ts",
+      "import": "./general/esm/*.js",
+      "require": "./general/*.js"
+    },
+    "./general/*.js": {
+      "types": "./general/*.d.ts",
+      "import": "./general/esm/*.js",
+      "require": "./general/*.js"
+    },
+    "./arrows": {
+      "types": "./arrows/index.d.ts",
+      "import": "./arrows/esm/index.js",
+      "require": "./arrows/index.js"
+    },
+    "./arrows/*": {
+      "types": "./arrows/*.d.ts",
+      "import": "./arrows/esm/*.js",
+      "require": "./arrows/*.js"
+    },
+    "./arrows/*.js": {
+      "types": "./arrows/*.d.ts",
+      "import": "./arrows/esm/*.js",
+      "require": "./arrows/*.js"
+    },
+    "./carets-chevrons": {
+      "types": "./carets-chevrons/index.d.ts",
+      "import": "./carets-chevrons/esm/index.js",
+      "require": "./carets-chevrons/index.js"
+    },
+    "./carets-chevrons/*": {
+      "types": "./carets-chevrons/*.d.ts",
+      "import": "./carets-chevrons/esm/*.js",
+      "require": "./carets-chevrons/*.js"
+    },
+    "./carets-chevrons/*.js": {
+      "types": "./carets-chevrons/*.d.ts",
+      "import": "./carets-chevrons/esm/*.js",
+      "require": "./carets-chevrons/*.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": ">= 16"
+  }
+}
